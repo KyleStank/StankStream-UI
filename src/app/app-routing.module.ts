@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavComponent } from './nav/nav.component';
+import { DashboardComponent } from './home/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: NavComponent
+    component: DashboardComponent
+  },
+  {
+    path: 'dashboard',
+    redirectTo: ''
   }
 ];
 
