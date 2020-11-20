@@ -19,7 +19,7 @@ const routes: Routes = [
     redirectTo: ''
   },
   {
-    path: '404',
+    path: 'not-found',
     children: [
       {
         path: '',
@@ -32,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '404'
+    redirectTo: 'not-found'
   }
 ];
 
