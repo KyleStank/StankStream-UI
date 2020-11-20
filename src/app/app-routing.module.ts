@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FourOFourComponent } from './404/404.component';
-import { DashboardComponent } from './home/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -22,7 +20,15 @@ const routes: Routes = [
   },
   {
     path: '404',
-    component: FourOFourComponent
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./not-found/not-found.module').then(
+            mod => mod.NotFoundModule
+          )
+      }
+    ]
   },
   {
     path: '**',

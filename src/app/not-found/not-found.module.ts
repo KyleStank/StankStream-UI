@@ -2,20 +2,20 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AppMatModule } from '../shared/app-mat.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent
+    component: NotFoundComponent
   }
 ];
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    NotFoundComponent
   ],
   imports: [
     AppMatModule,
@@ -25,4 +25,4 @@ const routes: Routes = [
     SharedModule
   ]
 })
-export class HomeModule {}
+export class NotFoundModule {}
