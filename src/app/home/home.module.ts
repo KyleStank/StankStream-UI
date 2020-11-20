@@ -4,6 +4,15 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { AppMatModule } from '../shared/app-mat.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
+import { Route } from '@angular/compiler/src/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: DashboardComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -11,6 +20,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     AppMatModule,
+    RouterModule.forChild(routes),
     CommonModule,
     LayoutModule,
     SharedModule
