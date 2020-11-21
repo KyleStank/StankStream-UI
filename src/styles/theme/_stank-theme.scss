@@ -12,15 +12,15 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$StankStream-UI-primary: mat-palette($mat-indigo);
-$StankStream-UI-accent: mat-palette($mat-pink, A200, A100, A400);
+$StankStream-UI-primary: mat-palette($stank-primary);
+$StankStream-UI-accent: mat-palette($stank-primary, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$StankStream-UI-warn: mat-palette($mat-red);
+$StankStream-UI-warn: mat-palette($stank-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$StankStream-UI-theme: mat-light-theme((
+$StankStream-UI-theme: mat-dark-theme((
   color: (
     primary: $StankStream-UI-primary,
     accent: $StankStream-UI-accent,
