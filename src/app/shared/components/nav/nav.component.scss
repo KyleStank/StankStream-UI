@@ -1,9 +1,13 @@
+@use 'sass:map';
+
+@use '~src/styles/theme/theme-variables' as theme;
+
 .main-nav {
   height: 70px;
   display: flex;
   position: relative;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: map.get(theme.$stank-primary, 700);
 
   .nav-option {
     display: inline-block;

@@ -10,5 +10,5 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
-  background-color: theme.$globalBackgroundColor;
+  background-color: map.get(theme.$stank-primary, 400);
 }
