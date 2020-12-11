@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { AppMatModule } from './app-mat.module';
 import { NavComponent } from './components/nav/nav.component';
@@ -7,10 +8,12 @@ import { NavComponent } from './components/nav/nav.component';
     NavComponent
   ],
   imports: [
-    AppMatModule
+    CommonModule
+    // AppMatModule
   ],
   exports: [
-    AppMatModule,
+    // AppMatModule,
+    CommonModule,
     NavComponent
   ]
 })

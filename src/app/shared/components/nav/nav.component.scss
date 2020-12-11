@@ -1,0 +1,45 @@
+.main-nav {
+  height: 70px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  .nav-option {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .logo,
+  .nav-menu {
+    margin: 0 5px;
+  }
+
+  .nav-menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+
+    .nav-item {
+      margin-left: 1.25em;
+
+      &.active {
+        a {
+          font-weight: 700;
+        }
+      }
+      
+      a {
+        font-size: 1.1em;
+        text-decoration: none;
+        opacity: 1;
+        
+        transition: opacity 250ms;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}

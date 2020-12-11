@@ -1,3 +1,16 @@
-<mat-toolbar color="primary">
-  <span>Application</span>
-</mat-toolbar>
+<nav class="main-nav">
+  <a href="/" aria-label="Netflix" class="nav-option logo">[Logo]</a>
+  <ul class="nav-option nav-menu">
+    <li
+      [ngClass]="{ 'nav-item': true, 'active': item.active }"
+      *ngFor="let item of navItems"
+    >
+      <a
+        aria-label="Home"
+        [href]="item.url"
+      >
+        {{ item.title }}
+      </a>
+    </li>
+  </ul>
+</nav>
