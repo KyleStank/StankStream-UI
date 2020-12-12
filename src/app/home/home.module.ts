@@ -18,7 +18,7 @@ const routes: Routes = [
     DashboardComponent
   ],
   imports: [
-    AppMatModule,
+    // AppMatModule,
     RouterModule.forChild(routes),
     CommonModule,
     LayoutModule,

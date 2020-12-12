@@ -10,7 +10,7 @@
   background-color: map.get(theme.$stank-primary, 700);
 
   .nav-option {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: middle;
   }
   
@@ -20,7 +20,6 @@
   }
 
   .nav-menu {
-    display: flex;
     padding: 0;
     list-style-type: none;
 
