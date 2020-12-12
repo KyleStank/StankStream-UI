@@ -31,6 +31,18 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'colors',
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./colors/colors.module').then(
+            mod => mod.ColorsModule
+          )
+      }
+    ]
+  },
+  {
     path: '**',
     redirectTo: 'not-found'
   }
